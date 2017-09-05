@@ -1,0 +1,8 @@
+#0:
+\w+
+
+#1
+[\w]+(?=\.)
+//needs work
+(?=[A-Z]+[\w])(([\w]+(?=\.)))
+//so this is a way to find the capitalized words before a period.....we need to put the two in the LHC and make them combine.
