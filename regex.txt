@@ -3,6 +3,16 @@
 
 #1
 [\w]+(?=\.)
-//needs work
+//This first part of the regex captures all words that end with aperiod
+
 (?=[A-Z]+[\w])(([\w]+(?=\.)))
-//so this is a way to find the capitalized words before a period.....we need to put the two in the LHC and make them combine.
+//This second part of the regex is an expansion upon that idea. This regex captures all of the words that end in a period and have a capital first letter. 
+
+//with these two regexs I should be able to combine to get the final answer, but there is a logical leap that I am not understanding. 
+
+
+#2
+
+[\w]+\.+.*
+
+//the .* is probably a little more of a catach all than needed....
